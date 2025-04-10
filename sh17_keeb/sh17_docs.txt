@@ -104,12 +104,10 @@ sh17 is a 17 key custom 4x5 numpad with additional buttons above it. I handwired
             KC_KP_1,   KC_KP_2, KC_KP_3, 
             KC_KP_0,   KC_KP_DOT,   KC_KP_ENTER
 
-
 //Step 5. Next create firmware
     in qmk msys compile the keyboard created
 
     qmk compile -kb sh17 -km default   //this builds a hex file in the qmk_firmware folder (sh17_default.hex).
-
 
 // Step 6. Flash the firmware
     Open qmk toolbox
