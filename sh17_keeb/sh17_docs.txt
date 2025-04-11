@@ -131,3 +131,10 @@ least the same as the rest of the switches. Then, resolder NEW diodes onto the k
 sure everything is lined up properly between the GPIO pins, the col2row layout, the matrix, and make sure the keymap is configured properly. 
 
 Then, open the qmk toolbox and flash the corrected firmware, to the corrected hardware, and debug from there.
+
+this is a test:  123
+
+
+0123456789a[++++++++
+
+aa[[]]]
