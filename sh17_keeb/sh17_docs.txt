@@ -132,9 +132,6 @@ sure everything is lined up properly between the GPIO pins, the col2row layout, 
 
 Then, open the qmk toolbox and flash the corrected firmware, to the corrected hardware, and debug from there.
 
-this is a test:  123
+4/10/10:24pm 
 
-
-0123456789a[++++++++
-
-aa[[]]]
+Got it fully functional, I had the pins messed up. I will create a change list of what I did and where I went wrong.
