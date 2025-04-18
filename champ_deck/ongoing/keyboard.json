@@ -5,6 +5,16 @@
     "development_board": "promicro",
     "diode_direction": "COL2ROW",
     "bootloader": "caterina",
+    "encoder": {
+      "rotary": [
+        { "pin_a": "F5", "pin_b": "F6" },
+        { "pin_a": "F7", "pin_b": "B6" }
+      ]
+    },
+    "matrix_size" : {
+      "rows": 2,
+      "cols": 5
+    },
     "features": {
       "bootmagic": true,
       "command": false,
@@ -14,13 +24,7 @@
       "nkro": true,
       "encoder": true
     },
-    "encoder": {
-      "rotary": [
-        { "pin_a": "F5", "pin_b": "F6" },
-        { "pin_a": "F7", "pin_b": "B6" }
-      ]
-    },
-    "matrix": {
+    "matrix_pins": {
       "cols": ["D1", "D0", "D4", "C6", "D7"],
       "rows": ["B4", "B5"]
     },
@@ -35,14 +39,14 @@
         "LAYOUT": {
              "layout": [
                     { "matrix": [0, 0], "x": 0, "y": 0 },
-                    { "matrix": [0, 1], "x": 0, "y": 1 },
-                    { "matrix": [0, 2], "x": 0, "y": 2 },
-                    { "matrix": [0, 3], "x": 0, "y": 3 },
-                    { "matrix": [0, 4], "x": 0, "y": 4 },
+                    { "matrix": [0, 1], "x": 1, "y": 0 },
+                    { "matrix": [0, 2], "x": 2, "y": 0 },
+                    { "matrix": [0, 3], "x": 3, "y": 0 },
+                    { "matrix": [0, 4], "x": 4, "y": 0 },
 
                     { "matrix": [1, 1], "x": 1, "y": 1 },
-                    { "matrix": [1, 2], "x": 1, "y": 2 },
-                    { "matrix": [1, 3], "x": 1, "y": 3 }
+                    { "matrix": [1, 2], "x": 2, "y": 1 },
+                    { "matrix": [1, 3], "x": 3, "y": 1 }
                     ]   
             }
         }
