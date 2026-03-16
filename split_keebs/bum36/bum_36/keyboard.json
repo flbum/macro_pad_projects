@@ -1,9 +1,15 @@
 {
     "manufacturer": "flbum",
-    "keyboard_name": "bum_36",
+    "keyboard_name": "bum_deck",
     "maintainer": "flbum",
     "development_board": "promicro",
     "diode_direction": "COL2ROW",
+    "encoder": {
+      "rotary": [
+        { "pin_a": "F4", "pin_b": "F5" },
+        { "pin_a": "F6", "pin_b": "F7" }
+      ]
+    },
     "features": {
         "bootmagic": true,
         "extrakey": true,
@@ -17,8 +23,8 @@
     "url": "",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "pid": "0x0005",
+        "vid": "0x4642"
     },
     "layouts": {
         "LAYOUT": {
