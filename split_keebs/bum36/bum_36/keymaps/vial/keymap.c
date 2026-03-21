@@ -13,7 +13,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [_BASE] =   { ENCODER_CCW_CW(KC_WH_D, KC_WH_U), ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_BASE] =   { ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP), ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [_LOWER] =  { ENCODER_CCW_CW(KC_LEFT, KC_RGHT), ENCODER_CCW_CW(KC_MPRV, KC_MNXT) },
     [_RAISE] =  { ENCODER_CCW_CW(KC_DOWN, KC_UP),   ENCODER_CCW_CW(KC_BRID, KC_BRIU) },
     [_ADJUST] = { ENCODER_CCW_CW(RGB_HUD, RGB_HUI), ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
