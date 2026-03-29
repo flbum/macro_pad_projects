@@ -19,9 +19,7 @@
         "rows": ["D4", "C6", "D7", "E6"]
     },
     "encoder": {
-        "rotary": [
-            { "pin_a": "B6", "pin_b": "B2" }
-        ]
+        "rotary": [{ "pin_a": "B6", "pin_b": "B2" }]
     },
     "split": {
         "enabled": true,
@@ -33,9 +31,7 @@
         },
         "encoder": {
             "right": {
-                "rotary": [
-                    { "pin_a": "B6", "pin_b": "B2" }
-                ]
+                "rotary": [{ "pin_a": "B4", "pin_b": "B5" }]
             }
         },
         "transport": {
@@ -78,7 +74,7 @@
                 { "matrix": [5, 3], "x": 11, "y": 1.25 },
                 { "matrix": [5, 4], "x": 12, "y": 1.75 },
 
-                { "matr`ix": [2, 0], "x": 0, "y": 2.75 },
+                { "matrix": [2, 0], "x": 0, "y": 2.75 },
                 { "matrix": [2, 1], "x": 1, "y": 2.25 },
                 { "matrix": [2, 2], "x": 2, "y": 2 },
                 { "matrix": [2, 3], "x": 3, "y": 2.25 },
