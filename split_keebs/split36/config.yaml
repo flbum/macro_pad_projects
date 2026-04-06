@@ -1,0 +1,201 @@
+meta:
+  engine: 4.2.1
+
+units:
+  ky: u
+  kx: u
+
+points:
+  key:
+    padding: ky
+    spread: kx
+
+  zones:
+    main:
+      key:
+        tags: [key, switch]
+      rows:
+        bottom:
+          row_net: R2
+        home:
+          row_net: R1
+        top:
+          row_net: R0
+      columns:
+        pinkie:
+          key:
+            column_net: C0
+        ring:
+          key:
+            column_net: C1
+            splay: -4
+            spread: kx + 2
+            stagger: 4
+        middle:
+          key:
+            column_net: C2
+            stagger: 5
+        index:
+          key:
+            column_net: C3
+            stagger: -5
+        far:
+          key:
+            column_net: C4
+            stagger: -5
+
+    thumb:
+      key:
+        tags: [key, thumb, switch]
+        row_net: R3
+      anchor:
+        ref: main_far_bottom
+        shift: [-5, -20]
+      rows:
+        thumb:
+      columns:
+        inner:
+          key:
+            column_net: C0
+            bind: [6, 0, 0, 0]
+        home:
+          key:
+            column_net: C1
+            rotate: -30
+            shift: [8, -8]
+            bind: [7, 5, 0, 12]
+        outer:
+          key:
+            column_net: C2
+            rotate: -50
+            shift: [10, -25]
+            bind: [6, 0, 0, 9]
+
+    encoder:
+      key:
+        tags: [encoder]
+      anchor:
+        ref: main_far_bottom
+        shift: [kx + 3, -2]
+      rows:
+        enc:
+      columns:
+        main:
+
+    helper:
+      anchor:
+        ref: encoder_main_enc
+      rows:
+        helper:
+      columns:
+        encoder_sw:
+          key:
+            tags: [key, encoder_switch, switch]
+            row_net: R3
+            column_net: C3
+            shift: [0, 0]
+        spare:
+          key:
+            tags: [spare]
+            row_net: R3
+            column_net: C4
+            shift: [kx, 0]
+
+outlines:
+  main_keys:
+    - what: rectangle
+      where: /^main_.*$/
+      size: [kx - 1, ky - 1]
+      bound: true
+
+  thumb_keys:
+    - what: rectangle
+      where: /^thumb_.*$/
+      size: [kx - 1, ky - 1]
+      bound: true
+
+  utility:
+    - what: rectangle
+      where:
+        ref: encoder_main_enc
+        shift: [-10, 12]
+      size: [24, 70]
+      fillet: 2
+
+  raw:
+    - what: outline
+      name: main_keys
+    - what: outline
+      name: thumb_keys
+    - what: outline
+      name: utility
+
+  board:
+    - what: outline
+      name: raw
+      expand: 3
+      fillet: 4
+
+pcbs:
+  split36:
+    template: kicad8
+
+    outlines:
+      main:
+        outline: board
+
+    footprints:
+      mx_switches:
+        what: ceoloide/switch_mx
+        where: /^main_.*$|^thumb_.*$/
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
+      diodes:
+        what: ceoloide/diode_tht_sod123
+        where: /^main_.*$|^thumb_.*$/
+        adjust:
+          shift: [0, -7]
+          rotate: 180
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+
+      encoder:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: /^encoder_main_enc$/
+
+      mcu:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: main_far_home
+          shift: [21, 14]
+          rotate: 0
+        params:
+          side: F
+          reversible: true
+          reverse_mount: false
+          include_traces: true
+          only_required_jumpers: true
+
+      battery_jst:
+        what: ceoloide/battery_connector_jst_ph_2
+        where:
+          ref: main_far_bottom
+          shift: [10, 10]
+          rotate: 90
+
+      power_switch:
+        what: ceoloide/power_switch_smd_side
+        where:
+          ref: main_far_top
+          shift: [5, 10]
+          rotate: 90
+
+      reset_switch:
+        what: ceoloide/reset_switch_smd_side
+        where:
+          ref: main_far_bottom
+          shift: [12, -8]
+          rotate: 0

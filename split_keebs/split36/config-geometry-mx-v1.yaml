@@ -1,0 +1,138 @@
+units:
+  ky: u
+  kx: u
+
+points:
+  key:
+    padding: ky
+    spread: kx
+
+  zones:
+    main:
+      key:
+        tags: [key]
+      rows:
+        bottom:
+          row_net: R2
+        home:
+          row_net: R1
+        top:
+          row_net: R0
+      columns:
+        pinkie:
+          key:
+            column_net: C0
+        ring:
+          key:
+            column_net: C1
+            splay: -4
+            spread: kx + 2
+            stagger: 4
+        middle:
+          key:
+            column_net: C2
+            stagger: 5
+        index:
+          key:
+            column_net: C3
+            stagger: -5
+        far:
+          key:
+            column_net: C4
+            stagger: -5
+
+    thumb:
+      key:
+        tags: [key, thumb]
+        row_net: R3
+      anchor:
+        ref: main_far_bottom
+        shift: [-5, -20]
+      rows:
+        thumb:
+      columns:
+        inner:
+          key:
+            column_net: C0
+            bind: [6, 0, 0, 0]
+        home:
+          key:
+            column_net: C1
+            rotate: -30
+            shift: [8, -8]
+            bind: [5, 5, 0, 10]
+        outer:
+          key:
+            column_net: C2
+            rotate: -50
+            shift: [10, -25]
+            bind: [5, 0, 0, 8]
+
+    encoder:
+      key:
+        tags: [encoder]
+      anchor:
+        ref: main_far_bottom
+        shift: [kx + 8, 0]
+      rows:
+        enc:
+      columns:
+        main:
+
+    helper:
+      anchor:
+        ref: encoder_main_enc
+      rows:
+        helper:
+      columns:
+        encoder_sw:
+          key:
+            tags: [key, encoder_switch]
+            row_net: R3
+            column_net: C3
+            shift: [0, 0]
+        spare:
+          key:
+            tags: [spare]
+            row_net: R3
+            column_net: C4
+            shift: [kx, 0]
+
+  mirror:
+    ref: main_far_home
+    distance: 200
+
+outlines:
+  main_keys:
+    - what: rectangle
+      where: /^main_.*$/
+      size: [kx - 1, ky - 1]
+      bound: true
+
+  thumb_keys:
+    - what: rectangle
+      where: /^thumb_.*$/
+      size: [kx - 1, ky - 1]
+      bound: true
+
+  utility:
+    - what: rectangle
+      where:
+        ref: encoder_main_enc
+        shift: [-8, 9.55]
+      size: [20, 65]
+      fillet: 2
+
+  raw:
+    - what: outline
+      name: main_keys
+    - what: outline
+      name: thumb_keys
+    - what: outline
+      name: utility
+
+  board:
+    - what: outline
+      name: raw
+      expand: 3
+      fillet: 4
