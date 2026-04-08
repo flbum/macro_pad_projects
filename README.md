@@ -6,6 +6,7 @@ This repository contains a collection of custom macro pads and keyboards built u
 
 - **bum_deck**: A compact macro pad with custom key mappings.
 - **champ_deck**: Another macro pad design with unique features.
+- **leroy**: A hand-wired 8-key macro pad with 2 rotary encoders.
 - **sh17**: A 17-key numpad-style macro pad, handwired.
 - **sh6r2**: A smaller macro pad project.
 - **split_keebs**: Split keyboard designs, including the bum_36 split keyboard.
