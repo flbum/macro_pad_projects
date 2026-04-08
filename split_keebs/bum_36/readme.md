@@ -46,33 +46,31 @@ If you are integrating this into a QMK tree, the matching keyboard files are als
 
 ## Materials
 
-Replace the placeholders below with the exact parts and quantities used for your build.
+This build used the actual parts and wiring for the bum_36 split keyboard.
 
 ### Core electronics
 
-- Controllers: `[enter controller model and quantity]`
-- Switches: `[enter switch type and quantity]`
-- Diodes: `[enter diode type and quantity]`
-- Rotary encoders: `[enter encoder model and quantity]`
-- TRRS or interconnect parts: `[enter connector/cable details]`
-- USB parts: `[enter breakout board / cable details]`
+- Controllers: 2 Arduino Pro Micros
+- Switches: 36 Cherry MX Brown switches
+- Diodes: 1N4148 diodes
+- Rotary encoders: 2 standard CY1111/EC11-style encoders
+- Split communication: 4-pin USB-C breakout boards used to pass I2C between halves
 
 ### Printed parts
 
-- Plate material: `[enter material]`
-- Case material: `[enter material]`
-- Print profile: `[layer height / infill / nozzle / supports if used]`
-- STL version used: `[enter file version(s)]`
+- Plate material: 3D-printed plastic
+- Case material: 3D-printed plastic
+- Print profile: standard hobby printer settings with enough strength for the plates and case
+- STL version used: the included `stl_files/` versions in this folder
 
 ### Hardware and consumables
 
-- Wire: `[enter wire type / gauge]`
-- Solder: `[enter solder type]`
-- Heat shrink: `[enter size/type]`
-- Fasteners: `[enter screw / standoff details if used]`
-- Keycaps: `[enter keycap set]`
-- Knobs: `[enter knob details]`
-
+- Matrix wiring: solid copper wire for rows and columns
+- Board wiring: stranded wire for the connections to the Pro Micros and other components
+- Solder: 70/30 solder
+- Heat shrink: clear shrink tubing for insulation
+- USB: USB-C cable and a 4-pin USB-C breakout for I2C communication
+- Keycaps: standard keycaps and rotary encoder knobs
 ## Build Notes
 
 ### Design summary
