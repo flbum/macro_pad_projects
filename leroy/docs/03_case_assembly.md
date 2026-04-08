@@ -1,0 +1,1 @@
+Top Plate includes mounting holes for both encoders and all switches.
