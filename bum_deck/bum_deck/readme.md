@@ -1,20 +1,20 @@
 # bum_deck
 
-![bum_deck](imgur.com image replace me!)
+![bum_deck](https://i.imgur.com/placeholder.png)
 
-*A short description of the keyboard/project*
+*A compact 8-key macro pad with two rotary encoders for additional functionality.*
 
 * Keyboard Maintainer: [flbum](https://github.com/flbum)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Pro Micro controller
+* Hardware Availability: Custom PCB/handwired
 
 Make example for this keyboard (after setting up your build environment):
 
-    make bum_deck:default
+    qmk compile -kb bum_deck -km default
 
 Flashing example for this keyboard:
 
-    make bum_deck:default:flash
+    qmk flash -kb bum_deck -km default
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
