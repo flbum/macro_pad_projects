@@ -438,7 +438,7 @@ pcbs:
           shift: [9, 17]
           rotate: 90
         params:
-          from: BAT_Pß
+          from: BAT_P
           to: RAW
 
       reset_switch:

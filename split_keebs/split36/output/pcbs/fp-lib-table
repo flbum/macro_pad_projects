@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "keyswitches")(type "KiCad")(uri "/Users/matt/Documents/Projects/split36/kicad-libs/keyswitches.pretty")(options "")(descr ""))
-)
