@@ -1,27 +1,26 @@
-# bum_deck
+# leroy
 
-![bum_deck](https://i.imgur.com/placeholder.png)
+![leroy](../../images/leroy_render.png)
 
-*A compact 8-key macro pad with two rotary encoders for additional functionality.*
+*A hand-wired 8-key macro pad with 2 rotary encoders, built for personal use.*
 
 * Keyboard Maintainer: [flbum](https://github.com/flbum)
-* Hardware Supported: Pro Micro controller
-* Hardware Availability: Custom PCB/handwired
+* Hardware Supported: Arduino Pro Micro (Atmega32u4)
+* Hardware Availability: Custom hand-wired build
 
 Make example for this keyboard (after setting up your build environment):
 
-    qmk compile -kb bum_deck -km default
+    qmk compile -kb leroy -km vial
 
 Flashing example for this keyboard:
 
-    qmk flash -kb bum_deck -km default
+    qmk flash -kb leroy -km vial
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader in 2 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Physical reset**: Briefly short the RST and GND pins

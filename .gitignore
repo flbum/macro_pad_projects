@@ -1,7 +1,52 @@
+# Junk files
+*.bak
+*.swp
+*~
 .DS_Store
-/macro_pad_projects/split_keyboards/bum_36/stl_files/left_body.stl
-/macro_pad_projects/split_keyboards/bum_36/stl_files/left_plate_v1.1.stl
-/macro_pad_projects/split_keyboards/bum_36/stl_files/left_plate.stl
-/macro_pad_projects/split_keyboards/bum_36/stl_files/right_plate.stl
-/macro_pad_projects/split_keyboards/bum_36/stl_files/right_plate_v1.1.stl
-/macro_pad_projects/split_keyboards/bum_36/stl_files/right_case.stl
+._*
+
+# Merge files
+*.orig
+*.rej
+
+# Build artifacts
+.clang_complete
+.build/
+*.elf
+*.log
+*.lss
+*.lst
+*.map
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.la
+*.stackdump
+*.sym
+index.html
+firmware_list.json
+
+# QMK-specific
+api_data/v1
+quantum/version.h
+*.bin
+*.eep
+*.hex
+*.qmk
+*.uf2
+
+# DD config at wrong location
+/keyboards/**/keymaps/*/info.json
+/keyboards/**/keymaps/*/keyboard.json
+
+# Old-style QMK Makefiles
+/keyboards/**/Makefile
+
+# kbfirmware....
+/keyboards/**/kb.h
+/keyboards/**/kb.c
+
+# STL files for 3D printing
+split_keebs/bum_36/stl_files/*.stl
