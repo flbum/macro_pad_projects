@@ -1,0 +1,19 @@
+menuconfig VELOCIRAPTOR36_RGB_STATUS
+    bool "Velociraptor36 RGB status flashes"
+    default y
+    depends on ZMK_RGB_UNDERGLOW && ZMK_BLE
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+    help
+      Flash RGB underglow for power-on, BLE pairing/connection, and BLE profile selection.
+
+if VELOCIRAPTOR36_RGB_STATUS
+
+config VELOCIRAPTOR36_RGB_STATUS_INIT_PRIORITY
+    int "Velociraptor36 RGB status init priority"
+    default 91
+
+config VELOCIRAPTOR36_RGB_STATUS_FLASH_MS
+    int "Velociraptor36 RGB status flash interval"
+    default 160
+
+endif

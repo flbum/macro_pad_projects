@@ -1,0 +1,10 @@
+file_format: "1"
+id: velociraptor36
+name: Velociraptor36
+type: shield
+url: https://github.com/flbum/macro_pad_projects
+requires: [pro_micro]
+features:
+  - studio
+  - split
+  - encoder

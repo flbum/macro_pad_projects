@@ -1,0 +1,16 @@
+if SHIELD_VELOCIRAPTOR36_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Velociraptor36"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_VELOCIRAPTOR36_LEFT || SHIELD_VELOCIRAPTOR36_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
