@@ -1,0 +1,118 @@
+name: Build ZMK firmware
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zmk-build-arm:stable
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - board: nice_nano_v2
+            shield: velociraptor36_left
+            artifact-name: velociraptor36_left
+            cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+          - board: nice_nano_v2
+            shield: velociraptor36_right
+            artifact-name: velociraptor36_right
+            cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+          - board: nice_nano
+            shield: velociraptor36_dongle
+            artifact-name: velociraptor36_dongle
+          - board: nice_nano_v2
+            shield: settings_reset
+            artifact-name: settings_reset_keyboard
+          - board: nice_nano
+            shield: settings_reset
+            artifact-name: settings_reset_dongle
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create build directory
+        run: |
+          echo "build_dir=$(mktemp -d)" >> "$GITHUB_ENV"
+          echo "base_dir=$(mktemp -d)" >> "$GITHUB_ENV"
+
+      - name: Copy config files to west workspace
+        run: |
+          mkdir -p "$base_dir/config"
+          cp -R firmware/zmk-config-velociraptor36/config/* "$base_dir/config/"
+
+      - name: Cache west modules
+        uses: actions/cache@v4
+        continue-on-error: true
+        with:
+          path: |
+            ${{ env.base_dir }}/modules/
+            ${{ env.base_dir }}/tools/
+            ${{ env.base_dir }}/zephyr/
+            ${{ env.base_dir }}/bootloader/
+            ${{ env.base_dir }}/zmk/
+          key: ${{ runner.os }}-zmk-${{ hashFiles('firmware/zmk-config-velociraptor36/config/west.yml', 'firmware/zmk-config-velociraptor36/build.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-zmk-
+
+      - name: West Init
+        working-directory: ${{ env.base_dir }}
+        run: west init -l "$base_dir/config"
+
+      - name: West Update
+        working-directory: ${{ env.base_dir }}
+        run: west update --fetch-opt=--filter=tree:0
+
+      - name: West Zephyr Export
+        working-directory: ${{ env.base_dir }}
+        run: west zephyr-export
+
+      - name: Build ${{ matrix.shield }}
+        working-directory: ${{ env.base_dir }}
+        shell: bash
+        run: |
+          extra_west_args=""
+          if [ -n "${{ matrix.snippet }}" ]; then
+            extra_west_args="-S ${{ matrix.snippet }}"
+          fi
+
+          west build \
+            -s zmk/app \
+            -d "$build_dir" \
+            -b "${{ matrix.board }}" \
+            $extra_west_args \
+            -- \
+            -DZMK_CONFIG="$base_dir/config" \
+            -DZMK_EXTRA_MODULES="$GITHUB_WORKSPACE/firmware/zmk-config-velociraptor36" \
+            -DSHIELD="${{ matrix.shield }}" \
+            ${{ matrix.cmake-args }}
+
+      - name: Show split role ${{ matrix.shield }}
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -f "$build_dir/zephyr/.config" ]; then
+            grep -E "CONFIG_(ZMK_USB|ZMK_STUDIO|ZMK_SPLIT=y|ZMK_SPLIT_ROLE_CENTRAL|ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS)" "$build_dir/zephyr/.config" || true
+          fi
+
+      - name: Rename artifact
+        run: |
+          mkdir "$build_dir/artifacts"
+          cp "$build_dir/zephyr/zmk.uf2" "$build_dir/artifacts/${{ matrix.artifact-name }}.uf2"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact-${{ matrix.artifact-name }}
+          path: ${{ env.build_dir }}/artifacts
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Merge artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: firmware
+          pattern: artifact-*
+          delete-merged: true

@@ -1,0 +1,390 @@
+Info: Processing symbol 'J2:Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12'.
+Info: Processing symbol 'U1:nice-nano-kicad-master:nice_nano'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'SW21:Button_Switch_SMD:SW_SPST_SKQG_WithoutStem'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'SW20:Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'SW19:Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'SW18:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'SW17:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D1:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW16:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D2:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW15:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D3:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW14:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D4:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW13:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D5:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW12:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D6:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW11:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D7:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW10:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D8:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW9:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D9:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'C1:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'D10:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW8:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D11:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW7:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D12:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW6:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D13:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW5:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D14:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW4:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D15:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW3:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D16:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW2:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D17:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'SW1:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB'.
+Info: Processing symbol 'D18:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'LED6:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'D19:Diode_SMD:D_SOD-123'.
+Info: Processing symbol 'LED5:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'J1:Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical'.
+Info: Processing symbol 'LED4:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'LED3:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'LED2:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'LED1:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Connect SW8 pin 2 to Net-(D8-A).
+Connect U1 pin 13 to /COL4.
+Add net /BAT+.
+Connect J1 pin 1 to /BAT+.
+Add net /GND.
+Connect J1 pin 2 to /GND.
+Update J1 unit metadata.
+Update J1 sheetfile to 'bum36_pcb.kicad_sch'.
+Change J2 value from USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal to USB_C_Receptacle_USB2.0_16P.
+Update J2 symbol association from  to /b616d3cf-52dd-4e3d-aadf-4d4f70ad1c07.
+Update J2 fields.
+Update J2 sheetname to '/'.
+Update J2 sheetfile to 'bum36_pcb.kicad_sch'.
+Update J2 footprint filters to 'USB*C*Receptacle*'.
+Add net /SPLIT_5V.
+Connect J2 pin B9 to /SPLIT_5V.
+Add net /SPLIT_TX.
+Connect J2 pin A6 to /SPLIT_TX.
+Connect J2 pin A4 to /SPLIT_5V.
+Add net /SPLIT_RX.
+Connect J2 pin B7 to /SPLIT_RX.
+Add net unconnected-(J2-SHIELD-PadSH).
+Connect J2 pin SH to unconnected-(J2-SHIELD-PadSH).
+Add net unconnected-(J2-CC2-PadB5).
+Connect J2 pin B5 to unconnected-(J2-CC2-PadB5).
+Add net unconnected-(J2-SBU2-PadB8).
+Connect J2 pin B8 to unconnected-(J2-SBU2-PadB8).
+Connect J2 pin A9 to /SPLIT_5V.
+Add net unconnected-(J2-CC1-PadA5).
+Connect J2 pin A5 to unconnected-(J2-CC1-PadA5).
+Add net unconnected-(J2-SBU1-PadA8).
+Connect J2 pin A8 to unconnected-(J2-SBU1-PadA8).
+Connect J2 pin B1 to /GND.
+Connect J2 pin A7 to /SPLIT_RX.
+Connect J2 pin SH to unconnected-(J2-SHIELD-PadSH).
+Connect J2 pin A12 to /GND.
+Connect J2 pin SH to unconnected-(J2-SHIELD-PadSH).
+Connect J2 pin SH to unconnected-(J2-SHIELD-PadSH).
+Connect J2 pin B6 to /SPLIT_TX.
+Connect J2 pin B4 to /SPLIT_5V.
+Connect J2 pin A1 to /GND.
+Connect J2 pin B12 to /GND.
+Update J2 unit metadata.
+Add J2 'Do not place' fabrication attribute.
+Update J1 sheetname to '/'.
+Add LED1 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Update J1 fields.
+Add LED2 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Update J1 symbol association from  to /816528ae-bdd9-4e17-9b4a-593dc6c87a54.
+Add LED3 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Change J1 value from JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical to Battery JST.
+Add LED4 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Add D19 (footprint 'Diode_SMD:D_SOD-123').
+Add LED5 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Add D18 (footprint 'Diode_SMD:D_SOD-123').
+Add LED6 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Add D17 (footprint 'Diode_SMD:D_SOD-123').
+Change SW1 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW1 symbol association from  to /2b58d0ae-03aa-42bd-a8bf-c0b1a4e38f88.
+Update SW1 fields.
+Update SW1 sheetname to '/'.
+Update SW1 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D1-A).
+Connect SW1 pin 2 to Net-(D1-A).
+Add net /COL0.
+Connect SW1 pin 1 to /COL0.
+Update SW1 unit metadata.
+Add D16 (footprint 'Diode_SMD:D_SOD-123').
+Change SW2 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW2 symbol association from  to /ff2be450-8d5a-4955-914b-5dfd826eb0dd.
+Update SW2 fields.
+Update SW2 sheetname to '/'.
+Update SW2 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D2-A).
+Connect SW2 pin 2 to Net-(D2-A).
+Add net /COL1.
+Connect SW2 pin 1 to /COL1.
+Update SW2 unit metadata.
+Add D15 (footprint 'Diode_SMD:D_SOD-123').
+Change SW3 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW3 symbol association from  to /297df0a9-5b45-4229-aa92-8768e67551dd.
+Update SW3 fields.
+Update SW3 sheetname to '/'.
+Update SW3 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D3-A).
+Connect SW3 pin 2 to Net-(D3-A).
+Add net /COL2.
+Connect SW3 pin 1 to /COL2.
+Update SW3 unit metadata.
+Add D14 (footprint 'Diode_SMD:D_SOD-123').
+Change SW4 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW4 symbol association from  to /4e82182c-9032-45c0-9142-44a84b3849b3.
+Update SW4 fields.
+Update SW4 sheetname to '/'.
+Update SW4 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net /COL3.
+Connect SW4 pin 1 to /COL3.
+Add net Net-(D4-A).
+Connect SW4 pin 2 to Net-(D4-A).
+Update SW4 unit metadata.
+Add D13 (footprint 'Diode_SMD:D_SOD-123').
+Change SW5 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW5 symbol association from  to /d797f297-cccb-499b-8820-c65c38f81f55.
+Update SW5 fields.
+Update SW5 sheetname to '/'.
+Update SW5 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D5-A).
+Connect SW5 pin 2 to Net-(D5-A).
+Add net /COL4.
+Connect SW5 pin 1 to /COL4.
+Update SW5 unit metadata.
+Add D12 (footprint 'Diode_SMD:D_SOD-123').
+Change SW6 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW6 symbol association from  to /253428ab-6d2d-4909-ae33-9d5fd95577e9.
+Update SW6 fields.
+Update SW6 sheetname to '/'.
+Update SW6 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW6 pin 1 to /COL0.
+Add net Net-(D6-A).
+Connect SW6 pin 2 to Net-(D6-A).
+Update SW6 unit metadata.
+Add D11 (footprint 'Diode_SMD:D_SOD-123').
+Change SW7 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW7 symbol association from  to /5f213344-6dd3-4f93-bb68-24e230a47af6.
+Update SW7 fields.
+Update SW7 sheetname to '/'.
+Update SW7 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D7-A).
+Connect SW7 pin 2 to Net-(D7-A).
+Connect SW7 pin 1 to /COL1.
+Update SW7 unit metadata.
+Add D10 (footprint 'Diode_SMD:D_SOD-123').
+Change SW8 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW8 symbol association from  to /a823bdae-ef39-47c0-89cb-11a8ffe47e65.
+Update SW8 fields.
+Update SW8 sheetname to '/'.
+Update SW8 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D8-A).
+Add D9 (footprint 'Diode_SMD:D_SOD-123').
+Connect SW8 pin 1 to /COL2.
+Update SW8 unit metadata.
+Add D8 (footprint 'Diode_SMD:D_SOD-123').
+Change SW9 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW9 symbol association from  to /b7ea7360-8f08-4d71-96c6-516e58d1f16a.
+Update SW9 fields.
+Update SW9 sheetname to '/'.
+Update SW9 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW9 pin 1 to /COL3.
+Add net Net-(D9-A).
+Connect SW9 pin 2 to Net-(D9-A).
+Update SW9 unit metadata.
+Add D7 (footprint 'Diode_SMD:D_SOD-123').
+Change SW10 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW10 symbol association from  to /4ad83542-bd3c-42d5-bd84-295f6db112ac.
+Update SW10 fields.
+Update SW10 sheetname to '/'.
+Update SW10 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D10-A).
+Connect SW10 pin 2 to Net-(D10-A).
+Connect SW10 pin 1 to /COL4.
+Update SW10 unit metadata.
+Add D6 (footprint 'Diode_SMD:D_SOD-123').
+Change SW11 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW11 symbol association from  to /1dba90ba-2038-4b0e-b794-beb5a8531095.
+Update SW11 fields.
+Update SW11 sheetname to '/'.
+Update J1 footprint filters to 'Connector*:*_1x??_*'.
+Connect SW11 pin 1 to /COL0.
+Add net Net-(D11-A).
+Connect SW11 pin 2 to Net-(D11-A).
+Update SW11 unit metadata.
+Add D5 (footprint 'Diode_SMD:D_SOD-123').
+Change SW12 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW12 symbol association from  to /28290f5e-3d86-43dc-b0da-0425286d53f3.
+Update SW12 fields.
+Update SW12 sheetname to '/'.
+Update SW12 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW12 pin 1 to /COL1.
+Add net Net-(D12-A).
+Connect SW12 pin 2 to Net-(D12-A).
+Update SW12 unit metadata.
+Add D4 (footprint 'Diode_SMD:D_SOD-123').
+Change SW13 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW13 symbol association from  to /33b6f6af-09ef-41ad-9e8d-71b2fe1f7c7f.
+Update SW13 fields.
+Update SW13 sheetname to '/'.
+Update SW13 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D13-A).
+Connect SW13 pin 2 to Net-(D13-A).
+Connect SW13 pin 1 to /COL2.
+Update SW13 unit metadata.
+Add D3 (footprint 'Diode_SMD:D_SOD-123').
+Change SW14 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW14 symbol association from  to /db8e74b8-5db2-4bee-9571-0c32caee02d0.
+Update SW14 fields.
+Update SW14 sheetname to '/'.
+Update SW14 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D14-A).
+Connect SW14 pin 2 to Net-(D14-A).
+Connect SW14 pin 1 to /COL3.
+Update SW14 unit metadata.
+Add D2 (footprint 'Diode_SMD:D_SOD-123').
+Change SW15 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW15 symbol association from  to /fe740b85-fca0-453e-97c5-180ae6a1115c.
+Update SW15 fields.
+Update SW15 sheetname to '/'.
+Update SW15 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW15 pin 1 to /COL4.
+Add net Net-(D15-A).
+Connect SW15 pin 2 to Net-(D15-A).
+Update SW15 unit metadata.
+Add D1 (footprint 'Diode_SMD:D_SOD-123').
+Change SW16 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW16 symbol association from  to /4b145f31-8433-4e48-b685-341a3d6585d6.
+Update SW16 fields.
+Update SW16 sheetname to '/'.
+Update SW16 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW16 pin 1 to /COL1.
+Add net Net-(D16-A).
+Connect SW16 pin 2 to Net-(D16-A).
+Update SW16 unit metadata.
+Add C6 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Change SW17 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW17 symbol association from  to /57fa3797-d317-4bf3-9b19-26de6b46b43d.
+Update SW17 fields.
+Update SW17 sheetname to '/'.
+Update SW17 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net Net-(D17-A).
+Connect SW17 pin 2 to Net-(D17-A).
+Connect SW17 pin 1 to /COL2.
+Update SW17 unit metadata.
+Add C5 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Change SW18 value from SW_Cherry_MX_1.00u_PCB to SW_Push.
+Update SW18 symbol association from  to /0aab214e-5e68-42c2-96d5-a22f329032eb.
+Update SW18 fields.
+Update SW18 sheetname to '/'.
+Update SW18 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW18 pin 1 to /COL3.
+Add net Net-(D18-A).
+Connect SW18 pin 2 to Net-(D18-A).
+Update SW18 unit metadata.
+Add C4 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Change SW19 value from RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm to RotaryEncoder_Switch.
+Update SW19 symbol association from  to /3c85428a-c288-4a34-8b35-55853e8be476.
+Update SW19 fields.
+Update SW19 sheetname to '/'.
+Update SW19 sheetfile to 'bum36_pcb.kicad_sch'.
+Update SW19 footprint filters to 'RotaryEncoder*Switch*'.
+Update U1 unit metadata.
+Connect U1 pin 7 to /ROW2.
+Connect SW19 pin S2 to /COL4.
+Connect SW19 pin C to /GND.
+Add net /ENC_A.
+Connect SW19 pin A to /ENC_A.
+Add net Net-(D19-A).
+Connect SW19 pin S1 to Net-(D19-A).
+Add net /ENC_B.
+Connect SW19 pin B to /ENC_B.
+Update SW19 unit metadata.
+Add C3 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Change SW20 value from SW_SPDT_Shouhan_MSK12C02 to SW_SPDT.
+Update SW20 symbol association from  to /7100f965-8022-4b65-a540-47953e4120da.
+Update SW20 fields.
+Update SW20 sheetname to '/'.
+Update SW20 sheetfile to 'bum36_pcb.kicad_sch'.
+Add net /ROW2.
+Connect SW20 pin 2 to /BAT+.
+Connect U1 pin 11 to /COL2.
+Add net unconnected-(SW20-C-Pad3).
+Connect SW20 pin 3 to unconnected-(SW20-C-Pad3).
+Connect U1 pin 6 to /ROW1.
+Add net /ROW1.
+Add net /VCC_SW.
+Connect SW20 pin 1 to /VCC_SW.
+Update SW20 unit metadata.
+Add C2 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Change SW21 value from SW_SPST_TL3342 to SW_Push.
+Update SW21 symbol association from  to /afcd654a-8297-4261-acf3-19add474eaa4.
+Update SW21 fields.
+Update SW21 sheetname to '/'.
+Update SW21 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect SW21 pin 1 to /GND.
+Add net Net-(U1-RST).
+Connect SW21 pin 2 to Net-(U1-RST).
+Connect SW21 pin 2 to Net-(U1-RST).
+Connect SW21 pin 1 to /GND.
+Update SW21 unit metadata.
+Add SW21 'Do not place' fabrication attribute.
+Add C1 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Update U1 symbol association from  to /f14322c2-edd5-4286-8bc9-d7604680b7ed.
+Update U1 sheetname to '/'.
+Update U1 sheetfile to 'bum36_pcb.kicad_sch'.
+Connect U1 pin 9 to /COL0.
+Add net unconnected-(U1-P1.07-Pad33).
+Connect U1 pin 33 to unconnected-(U1-P1.07-Pad33).
+Connect U1 pin 12 to /COL3.
+Connect U1 pin 15 to /ENC_A.
+Connect U1 pin 1 to /GND.
+Add net /LED_VCC.
+Connect U1 pin 21 to /LED_VCC.
+Add net /ROW3.
+Connect U1 pin 8 to /ROW3.
+Add net /ROW0.
+Connect U1 pin 5 to /ROW0.
+Connect U1 pin 10 to /COL1.
+Connect U1 pin 23 to /GND.
+Connect U1 pin 3 to /GND.
+Add net unconnected-(U1-RX1/P0.08-Pad2).
+Connect U1 pin 2 to unconnected-(U1-RX1/P0.08-Pad2).
+Add net unconnected-(U1-P1.01-Pad31).
+Connect U1 pin 31 to unconnected-(U1-P1.01-Pad31).
+Connect U1 pin 4 to /GND.
+Add net unconnected-(U1-P1.15-Pad17).
+Connect U1 pin 17 to unconnected-(U1-P1.15-Pad17).
+Add net unconnected-(U1-AIN0/P0.02-Pad18).
+Connect U1 pin 18 to unconnected-(U1-AIN0/P0.02-Pad18).
+Connect U1 pin 19 to /SPLIT_RX.
+Connect U1 pin 20 to /SPLIT_TX.
+Connect U1 pin 22 to Net-(U1-RST).
+Add net unconnected-(U1-P1.02-Pad32).
+Connect U1 pin 32 to unconnected-(U1-P1.02-Pad32).
+Connect U1 pin 24 to /VCC_SW.
+Connect U1 pin 16 to /ENC_B.
+Add net /RGB_DATA.
+Connect U1 pin 14 to /RGB_DATA.
+Update SW11 sheetfile to 'bum36_pcb.kicad_sch'.
+Warning: No net found for component SW20 pad SH (no pin SH in symbol).
+Warning: No net found for component SW20 pad SH (no pin SH in symbol).
+Warning: No net found for component SW20 pad SH (no pin SH in symbol).
+Warning: No net found for component SW20 pad SH (no pin SH in symbol).
+Warning: No net found for component SW19 pad MP (no pin MP in symbol).
+Warning: No net found for component SW19 pad MP (no pin MP in symbol).
+
+
+Info: Total warnings: 6, errors: 0.

@@ -1,3 +1,1 @@
 zephyr_library()
-
-zephyr_library_sources_ifdef(CONFIG_VELOCIRAPTOR36_RGB_STATUS src/velociraptor36_rgb_status.c)
