@@ -10,7 +10,7 @@ The `bum_36` is a small split ergonomic keyboard built around a hand-wired matri
 
 ## Gallery
 
-| Top View | Front View |
+| Top View | Front View |q
 | --- | --- |
 | ![Top view](./images/TopView.jpeg) | ![Front view](./images/FrontView.jpeg) |
 
