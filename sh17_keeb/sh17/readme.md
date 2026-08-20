@@ -2,11 +2,13 @@
 
 ![sh17](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+# sh17
 
-* Keyboard Maintainer: [Matt Jenkins](https://github.com/flbum)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+A hand-wired 17-key numpad-style macro pad built with QMK firmware.
+
+- Keyboard Maintainer: @flbum
+- Hardware Supported: Pro Micro-compatible ATmega32U4 controller
+- Hardware Availability: Custom hand-wired build
 
 Make example for this keyboard (after setting up your build environment):
 
