@@ -86,13 +86,6 @@ This board uses a compact split layout with thumb keys and one encoder per half.
 5. Connect the two halves using the chosen split communication hardware.
 6. Flash the firmware and verify matrix, layers, and encoder behavior.
 
-### Personal build notes
-
-- Case/plate files used: `[enter files used]`
-- Wiring notes: `[enter notes]`
-- Encoder orientation notes: `[enter notes]`
-- Issues encountered: `[enter notes]`
-- Revisions for next build: `[enter notes]`
 
 ## Firmware
 
@@ -137,10 +130,3 @@ split_keebs/bum_36/
 └── readme.md
 ```
 
-## To Do
-
-- Add the final bill of materials
-- Add wiring diagram(s)
-- Add print settings and tolerances
-- Add keymap screenshots or layout diagrams
-- Add flashing notes for first-time builders
